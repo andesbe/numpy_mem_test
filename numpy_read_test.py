@@ -6,7 +6,7 @@ def read_parquet_files(path):
     #get the number of files in the directory
     num_files = len(files)
     #get the shape of the data
-    data_shape
+    data_shape= pd.read_parquet(path + files[0]).shape
     #create a numpy array with the same shape as the data
     data = np.zeros(data_shape)
     #loop through the files and fill the numpy array with the data
